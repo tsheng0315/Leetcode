@@ -17,7 +17,7 @@ Explanation: Running sum is obtained as follows: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+
 '''
 
 
-#Solution:
+#Solution mine:
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         array=[]
@@ -26,3 +26,10 @@ class Solution:
             now+=item
             array.append(now)
         return array
+    
+#Solution Dom:
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        for i in range(len(nums) - 1):
+            nums[i+1] = nums[i] + nums[i+1]
+        return nums 
