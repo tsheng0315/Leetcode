@@ -3,7 +3,6 @@ Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,.
 
 Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 
- 
 # Example 1:
 
 Input: nums = [2,5,1,3,4,7], n = 3
@@ -20,9 +19,11 @@ Output: [1,4,2,3,3,2,4,1]
 nums.length == 2n
 1 <= nums[i] <= 10^3
 
+
 ## Hint:
 用一个新的数组按照 nums[0], nums[n], nums[1], nums[n + 1], ... 的顺序依次保存所有的排列。
 '''
+
 # Solution
 class Solution:
     def shuffle(self,nums: List[int], n: int) -> List[int]:
