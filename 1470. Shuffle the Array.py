@@ -19,8 +19,10 @@ Output: [1,4,2,3,3,2,4,1]
 nums.length == 2n
 1 <= nums[i] <= 10^3
 
-## Solution:
+## Hint:
+用一个新的数组按照 nums[0], nums[n], nums[1], nums[n + 1], ... 的顺序依次保存所有的排列。
 
+# Solution
 class Solution:
     def shuffle(self,nums: List[int], n: int) -> List[int]:
         array = []
