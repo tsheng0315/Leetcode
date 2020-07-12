@@ -16,3 +16,42 @@ Example 2:
 # My solution:
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
+        count =0
+        nums_length=len(nums)
+        for i in range(nums_length):
+            for j in range(i+1,nums_length):
+                if nums[i]=nums[j]:
+                    count+=1
+        return count
+ 
+
+#Dom: dict+ pointer; key->number, value->frequency
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        count_by_number={}
+        for n in nums:
+            if n not in count_by_number:# n appeared for the first time
+                count_by_number[n]=1
+            else:
+                count_by_number[n]+=1
+        result=0
+        value=count_by_number.values()
+        for v in value:
+            result+=v*(v-1)//2
+        return result
+
+# online
+
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        return sum(v * (v - 1) // 2 for v in collections.Counter(nums).values())  # dict.values()  return value
+    
+    
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        
+        return sum(v * (v - 1) // 2 for key,v in collections.Counter(nums).items())  # dict.items() return key and value 
+    
+
+
+
