@@ -24,6 +24,7 @@
 它只允许在表的前端（front）进行删除操作，在表的后端（rear）进行插入操作. 
 
 进行插入操作的端称为队尾，进行删除操作的端称为队头。
+
 ![](https://upload-images.jianshu.io/upload_images/2243690-3116f05bb106b789.png?imageMogr2/auto-orient/strip|imageView2/2/w/446/format/webp)
 
 
