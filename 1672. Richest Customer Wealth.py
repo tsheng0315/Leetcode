@@ -23,12 +23,12 @@ class Solution:
 ``` python
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
-        return max(sum(i) for i in accounts)
+        return max(sum(i) for i in accounts)  # list expression
 ```
 
 ## map function
 ``` python
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
-        return max(map(sum,accounts))
+        return max(map(sum,accounts)) # map(function, iterable)
 ```
