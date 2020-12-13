@@ -1,7 +1,8 @@
 ## bf
-* calculate the wealth of each customer
-* find max in the wealth
-''' python
+1. calculate the wealth of each customer
+2. find max in the wealth
+
+``` python
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
         row=len(accounts)
@@ -15,19 +16,19 @@ class Solution:
             output.append(ans)  ## append at the end of the list
             
         return max(output)
-'''
+```
 
 ## improved list expression
 
-''' python
+``` python
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
         return max(sum(i) for i in accounts)
-'''
+```
 
 ## map function
-''' python
+``` python
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
         return max(map(sum,accounts))
-'''
+```
