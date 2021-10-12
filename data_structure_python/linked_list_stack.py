@@ -14,7 +14,7 @@ class Linked_list(object):
     def __init__(self, head = None):
         self.head = head
 
-    def appand(self, new_element):
+    def append(self, new_element):
         current = self.head
         if self.head:
             while current.next:
