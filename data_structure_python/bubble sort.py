@@ -16,7 +16,7 @@ print(bubble(list))
 
 # improvement: if no exchange happens in one iteration -> return 
 def bubble_imp(arr):
-    for i in range(len(arr)-1):
+    for i in range(len(arr)-1): # iteration ith
         exchange = False
         for j in range(len(arr)-i-1): # pointer
             if arr[j] > arr[j+1]:
