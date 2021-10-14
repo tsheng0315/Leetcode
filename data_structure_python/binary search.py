@@ -15,6 +15,12 @@ doesn't exist in the list.
 visualisation:
 https://www.cs.usfca.edu/~galles/visualization/Search.html
 """
+def linear_search(input_array, val):
+    for inedx, v in enumerate(input_array):
+        if v == val:
+            return inedx
+        else: 
+            return -1
 
 def binary_search(input_array, val):
     low = 0
