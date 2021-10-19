@@ -23,7 +23,7 @@ def select_sort_simple(list):# O(n^2)
 # ...
 # key point: 有序区，无序区，无序区最小数位置
 
-def select_sort(list):
+def select_sort(list): # O(n^2) 
     for i in range(len(list)-1): #i是第几趟，-1 是因为 最后一个数就是最大的了，不用动。O(n)
         # 遍历无序区
         min_loc = i #假定无序区的第一个值最小
