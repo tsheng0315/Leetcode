@@ -41,8 +41,9 @@ random.shuffle(list)
 # print(list)
 
 start_time = time.time()
-a = heap_sort(list)
-end_time= time.time()
+heap_sort(list)
 
+
+end_time= time.time()
 gap = end_time - start_time
 print(gap)
